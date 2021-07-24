@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows:1;
+    grid-template-areas: "content image";
+}
+
+.content{
+    grid-area: content;
+    display: flex;
+    flex-direction: column;
+    gap:1.2em;
+    box-sizing: border-box;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 80px;
+}
+
+.image{
+    grid-area: image;
+}
+
+.filled{
+    background: #045FE9;
+    border:none;
+    color: #fff;
+    font-size: 1.2em;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+    border:1px solid #045FE9;
+}
+
+
+.outlined{
+    background: #fff;
+    color: #000;
+    border:1px solid #045FE9;
+    margin-left: 20px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    padding: 10px 20px;
+}
+
+.hero h1{
+    color: rgb(1, 47, 99);
+    font-family: 'Lexend Deca';
+    width: 20ch;
+    font-size: 2.5em;
+}
+
+.hero img{
+    width: 900px;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+}
+
+.hero p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    width: 45ch;
+    line-height: 2em;
+}
